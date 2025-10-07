@@ -10,3 +10,7 @@ src/data/.git.backup/
 # Ignore runtime DB/data
 data/
 src/data/.git.backup/
+
+# Ignore runtime DB/data
+data/
+src/data/.git.backup/
