@@ -4,3 +4,5 @@ data/*.db-*
 
 # ignore git backup inside src/data
 src/data/.git.backup/
+# ignore git backup inside src/data
+src/data/.git.backup/
