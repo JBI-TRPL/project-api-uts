@@ -1,15 +1,15 @@
-node_modules
-data/*.db
-data/*.db-*
+# node_modules
+# data/*.db
+# data/*.db-*
 
-# ignore git backup inside src/data
-src/data/.git.backup/
-# ignore git backup inside src/data
-src/data/.git.backup/
+# # ignore git backup inside src/data
+# src/data/.git.backup/
+# # ignore git backup inside src/data
+# src/data/.git.backup/
 
-# Ignore runtime DB/data
+# # Ignore runtime DB/data
 
-src/data/.git.backup/
+# src/data/.git.backup/
 
-# Ignore runtime DB/data
-src/data/.git.backup/
+# # Ignore runtime DB/data
+# src/data/.git.backup/
