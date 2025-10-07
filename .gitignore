@@ -6,3 +6,7 @@ data/*.db-*
 src/data/.git.backup/
 # ignore git backup inside src/data
 src/data/.git.backup/
+
+# Ignore runtime DB/data
+data/
+src/data/.git.backup/
