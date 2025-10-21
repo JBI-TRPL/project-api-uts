@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Install Dependencies",
+      "setup": "npm install",
+      "run": "npm install",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 0
+    },
+    {
+      "name": "Run Jest Test Suite",
+      "setup": "npm install",
+      "run": "npm test",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 180,
+      "points": 70
+    },
+    {
+      "name": "Check Project Structure",
+      "setup": "",
+      "run": "test -d src/routes && test -d src/repositories && echo 'OK'",
+      "input": "",
+      "output": "OK",
+      "comparison": "exact",
+      "timeout": 30,
+      "points": 10
+    },
+    {
+      "name": "README Prompt Verification",
+      "setup": "",
+      "run": "grep -i 'prompt' README.md && echo 'found'",
+      "input": "",
+      "output": "found",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 10
+    },
+    {
+      "name": "API Health Check",
+      "setup": "npm install && node src/server.js & sleep 6",
+      "run": "curl -s -o /dev/null -w '%{http_code}' http://localhost:3000/api/books",
+      "input": "",
+      "output": "200",
+      "comparison": "exact",
+      "timeout": 60,
+      "points": 10
+    }
+  ]
+}
